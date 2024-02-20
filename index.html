@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Enlaces CDN de Animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Enlaces de Bootstrap v4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="/public/assets/css/normalice.css">
+  </head>
+  <body>
+
+    <div class="table container">
+
+      <header class="blackJack__cabecera">
+          <h1 class="cabecera__titulo"> BlackJack </h1>
+      </header>
+  
+      <div class="row ">
+          <div class="col text-center blackJack__botons">
+              <button id="btnNuevo"   class="btn btn-success   botons__tamaño">Nuevo Juego</button>
+              <button id="btnPedir"   class="btn btn-secondary botons__tamaño">Pedir Carta</button>
+              <button id="btnDetener" class="btn btn-danger    botons__tamaño">Detener</button>
+          </div>
+      </div>
+  
+      <div class="row container blackJack__jugador">
+          <div class="col">
+  
+              <h1 class="jugador__titulo">Jugador 1 - <small>0</small></h1>
+              <!-- <div class="jugador__flex"> -->
+                  <div id="jugador-cartas" class="divCartas">
+
+                  
+                  </div>
+      
+              <!-- </div> -->
+          </div>
+      </div>
+  
+      <div class="row container blackJack__computadora">
+          <div class="col">
+  
+              <h1 class="computadora__titulo">Computadora - <small>0</small></h1>
+              <!-- <div class="computadora__flex"> -->
+                  <div id="computadora-cartas" class="divCartas">
+
+                  </div>
+      
+              <!-- </div> -->
+          </div>
+      </div>
+  
+  
+  
+      
+  </div>
+  
+
+    <div id="app"></div>
+    <script type="module" src="/main.js">
+
+    </script>
+  </body>
+</html>

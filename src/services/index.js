@@ -1,0 +1,1 @@
+export {mostrarAlert} from './alert';
